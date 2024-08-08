@@ -51,7 +51,7 @@ const BottomNavigation: React.FC = () => {
           )}
         </motion.div>
       </Link>
-      <div onClick={() => handleNavigation("/rank")}>
+      <Link to="/rank" onClick={() => handleNavigation("/rank")}>
         <motion.div
           className={`flex flex-col items-center justify-center rounded-lg w-12 h-12 ${
             selected === "/rank"
@@ -83,7 +83,7 @@ const BottomNavigation: React.FC = () => {
             </motion.p>
           )}
         </motion.div>
-      </div>
+      </Link>
       <Link to="/mission" onClick={() => handleNavigation("/mission")}>
         <motion.div
           className={`flex flex-col items-center justify-center rounded-lg w-12 h-12 ${
